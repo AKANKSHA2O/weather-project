@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<div class="container">
+  <div class="header">
+    <h2>Weather</h2>
+    <div class="weather-input">
+      <input type="text" name="city" id="city_input" placeholder="Enter city name">
+      <button type ="button"id="searchBtn">
+        <i class="fa fa-regular fa fa-search"></i>Search
+      </button>
+      <button type ="button"id="locationBtn">
+        <i class="fa-solid fa fa-bullseye"></i> Current Location
+      </button>
+    </div>
+  </div>
+  <div class="weather_data">
+    <div class="weather-left">
+      <div class="card">
+        <div class="weather-current">
+          <div class="details">
+            <p>NOW</p>
+            <h2>__&deg;C</h2>
+            <p>____</p>
+          </div>
+          <div class="weather-icons">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png"
+             alt="">
+          </div>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <p><i class="fa fa-light class=fa fa-calendar" ></i>_______</p>
+          <p><i class="fa fa-solid    class=fa fa-location-arrow"></i>_______</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
