@@ -9,9 +9,10 @@
 }
 body {
   min-height: 100vh;
-  background-color: #212529;
+  background-color: var(--bg-color1);
   color: #fff;
-  padding: 0px;
+  padding: 0 15px;
+  font-family: Tahoma;
 }
 .header {
   position: sticky;
@@ -23,7 +24,7 @@ body {
   margin-bottom: 10px;
   padding: 15px 0;
   & #city_input {
-    background-color: #fff;
+    background-color: var(--bg-color2);
     border: none;
     padding: 12px;
     font-size: 16px;
@@ -34,7 +35,7 @@ body {
     }
   }
   & #searchBtn {
-    background-color: #7d867d;
+    background-color: #626d62;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -42,11 +43,11 @@ body {
     color: #fff;
     cursor: pointer;
     &:hover {
-      background-color: #afbcaf;
+      background-color: #7d867d;
     }
   }
   & #locationBtn {
-    background-color: #f44336;
+    background-color: #ea6e4b;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -54,7 +55,54 @@ body {
     color: #fff;
     cursor: pointer;
     &:hover {
-      background-color: #d55148;
+      background-color: #bf3131;
+    }
+  }
+}
+.card {
+  background-color: #2a2b2d;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  & p {
+    font-size: 14px;
+    color: #999;
+  }
+  & h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+.weather-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  & .weather-left {
+    grid-column: span;
+    & .current-weather {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & h2 {
+        margin: 7px 0;
+      }
+      & p {
+        color: #fff;
+      }
+    }
+    & .card-footer {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .forecaste-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      margin-bottom: 15px;
+      & .icon-wrapper {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
