@@ -81,7 +81,7 @@ hr {
   gap: 12px;
   & .weather-left {
     grid-column: span 1;
-    & .weather-current {
+    & .current-weather {
       display: flex;
       justify-content: space-between;
       align-items: center;
